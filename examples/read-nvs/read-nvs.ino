@@ -8,7 +8,7 @@
   Revision 1: 14/01/2025 
 */
 #include <iostream>
-#include "headers/nvs.hpp"
+#include "nvs.hpp"
 
 Storage storage("jsonParameters");  //Name of the storage that holds data
 
