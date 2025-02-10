@@ -10,7 +10,7 @@
 #include <iostream>
 #include "nvs.hpp"
 
-Storage storage("jsonParameters");  //Name of the storage that holds data
+Storage storage("Storage1");  //Name of the storage that holds data
 
 float result[5] = {}; // Array to hold the data
 
