@@ -9,14 +9,15 @@
 */
 
 #include "nvs.hpp"
+#define ARR_SIZE 5
 
 Storage storage("Storage1");  //Name of the storage space (Any name can be named)
-float data[] = { 1.2, 12.9, 23.1, 120.4, 212.98 }; //Data to store
+float data[ARR_SIZE] = { 1.2, 12.9, 23.1, 120.4, 212.98 }; //Data to store
 
 void setup() {
   // put your setup code here, to run once:
   storage.initialise();
-  storage.storeArray("Data", data, 5);  //Store the data inside para array in "Data"
+  storage.storeArray("Data", data, ARR_SIZE);  //Store the data inside para array in "Data"
 }
 
 void loop() {
