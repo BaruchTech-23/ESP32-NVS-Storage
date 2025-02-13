@@ -53,9 +53,9 @@ public:
       return ESP_OK;
     }
   }
-  void storeArray(String arrName, float* data) {
+  void storeArray(String arrName, float* data, int32_t size) {
     String indexWithArrayName = "";
-    for (int index = 0; index <= sizeof(data); index++) {
+    for (int index = 0; index < size; index++) {
       indexWithArrayName = arrName + String(index);
       putFloat(indexWithArrayName.c_str(), data[index]);
     }
